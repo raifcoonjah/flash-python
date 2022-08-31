@@ -18,9 +18,42 @@
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
   </header>
 
+  <!-- Navbar with a navbar-item as dropdown -->
+  <nav class="navbar">
+    <!-- Navbar brand -->
+    <a href="#" class="navbar-brand">
+MEME GENERATOR
+    </a>
+    <!-- Navbar nav -->
+    <ul class="navbar-nav ml-auto">
+      <!-- ml-auto = margin-left: auto -->
+      <li class="nav-item active">
+        <a href="https://github.com/raifcoonjah/meme-generator-flask" class="nav-link">Source Code</a>
+      </li>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Requires halfmoon.js for the dropdown -->
+  <script src="path/to/halfmoon.js"></script>
+
   <main>
-    <h3>MEME</h3>
-    <p><img src="{{meme_pic}}" /></p>
+    <div class="row">		
+  <div class="col-6">
+    <!-- Responsive image -->
+    <img src="{{meme_pic}}" class="img-fluid rounded" alt="responsive image">
+  </div>
+</div>
     <p>Stolen from: {{subreddit}}</p>
   </main>
+  <!-- Block buttons -->
+<div class="row">
+  <div class="col-md-6">
+    <a href="/">
+    <button class="btn btn-block" type="button">Next meme</button>
+    </a>
+  </div>
+</div>
 </html>
